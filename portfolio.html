@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Rheihan Wahyu Saputro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#777575",
+                        "surface": "#faf9f9",
+                        "surface-bright": "#faf9f9",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#faf9f9",
+                        "inverse-on-surface": "#f2f0f0",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#2f3031",
+                        "inverse-primary": "#c6c6c7",
+                        "surface-dim": "#dbdad9",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c4c7c8",
+                        "on-background": "#1b1c1c",
+                        "surface-container-high": "#e9e8e8",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e3e2e2",
+                        "surface-container": "#efeded",
+                        "secondary-container": "#e1e1c9",
+                        "primary": "#5d5f5f",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#747878",
+                        "surface-variant": "#e3e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "tertiary-fixed": "#e5e2e1",
+                        "secondary-fixed": "#e4e4cc",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary": "#5e604d",
+                        "on-surface-variant": "#444748",
+                        "tertiary": "#5f5e5e",
+                        "surface-container-low": "#f4f3f3",
+                        "primary-container": "#ffffff",
+                        "secondary-fixed-dim": "#c8c8b0",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#ffffff",
+                        "surface-tint": "#5d5f5f",
+                        "on-primary-fixed-variant": "#454747",
+                        "on-primary-container": "#747676",
+                        "on-secondary-fixed": "#1b1d0e",
+                        "on-secondary-container": "#636451",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "primary-fixed": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#474836"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "container-max": "1140px",
+                        "unit": "8px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display": ["Inter"],
+                        "h1": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "h1": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased">
+<!-- TopAppBar Component -->
+<header class="bg-white/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 shadow-[0_10px_40px_rgba(229,229,202,0.3)]">
+<div class="max-w-7xl mx-auto px-8 h-20 flex justify-between items-center">
+<div class="text-xl font-bold tracking-tighter text-neutral-900">
+                Rheihan Wahyu Saputro
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-inter tracking-tight font-medium">
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="index.html">HOME</a>
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="about.html">ABOUT</a>
+<a class="text-neutral-900 border-b-2 border-neutral-900 pb-1 transition-all duration-300" href="portfolio.html">PORTFOLIO</a>
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="contact.html">CONTACT</a>
+</nav>
+<button class="md:hidden text-neutral-900">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap">
+<div class="max-w-7xl mx-auto px-8">
+<!-- Hero Header -->
+<div class="mb-24 max-w-2xl">
+<h1 class="font-display text-display text-neutral-900 mb-6 uppercase tracking-tighter">Crafting Intentional Growth</h1>
+<p class="font-body-lg text-body-lg text-neutral-600">
+                    A curated selection of my professional journey, focusing on business intelligence, physical discipline, and consistent problem solving.
+                </p>
+</div>
+<!-- Bento Grid Portfolio -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Financial Journey - Large Bento Item -->
+<div class="md:col-span-8 bg-white border border-[#E5E5CA] rounded-lg p-10 shadow-[0_40px_50px_rgba(229,229,202,0.15)] flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-neutral-900" data-icon="payments">payments</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container tracking-[0.2em] uppercase">Phase 01</span>
+</div>
+<h2 class="font-h1 text-h1 text-neutral-900 mb-4">Financial Journey</h2>
+<p class="font-body-md text-body-md text-neutral-600 max-w-lg mb-8">
+                            Mastering the psychology of money and fundamental business mechanics. Transforming abstract financial concepts into actionable wealth strategies through constant iteration.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-[#FDFDF8] px-4 py-2 rounded-full font-label-sm text-label-sm text-neutral-700 border border-[#E5E5CA]">Market Analysis</span>
+<span class="bg-[#FDFDF8] px-4 py-2 rounded-full font-label-sm text-label-sm text-neutral-700 border border-[#E5E5CA]">Asset Allocation</span>
+<span class="bg-[#FDFDF8] px-4 py-2 rounded-full font-label-sm text-label-sm text-neutral-700 border border-[#E5E5CA]">Business Ethics</span>
+</div>
+</div>
+<div class="mt-12 h-64 overflow-hidden rounded-lg">
+<img alt="Financial Mindset" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Modern minimalist workspace with leather-bound notebook, high-end pen, and financial charts on a sleek tablet under soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoWueefhGM068aqz85-rFpCEh3ZUhXRFBtW59AIfY_8x75yD3L0HqmGZYe-_QCQn3N3EefkKMRMIAu0OFPGYN9_WGKFdkueZRGlm9ft0bM9A1WgYUY9sTzC-8o4EATYHqGSXLPEFP5Vet2tpE_fGg_3u7Rs5bhkIr6mEPwgKLn7XSRqk7D8TeYXtdPUkr4Q4cDVP4RmdziUl0pyk0V-QMUCCiinEgCffmNQ2LZxrKz85FaiOuox1EOn7Gmvo-3WQ3PDhBX4vXUUzPf"/>
+</div>
+</div>
+<!-- Skill Building - Vertical Bento Item -->
+<div class="md:col-span-4 bg-white border border-[#E5E5CA] rounded-lg p-10 shadow-[0_40px_50px_rgba(229,229,202,0.15)] group hover:-translate-y-1 transition-all duration-300">
+<div class="flex flex-col h-full">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-neutral-900" data-icon="construction">construction</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container tracking-[0.2em] uppercase">Core Engine</span>
+</div>
+<h2 class="font-h1 text-h1 text-neutral-900 mb-6">Skill Building</h2>
+<ul class="space-y-8 flex-grow">
+<li class="border-b border-[#F2F2E6] pb-4">
+<h3 class="font-h2 text-h2 text-neutral-900 mb-1">Analytical Reasoning</h3>
+<p class="font-body-md text-body-md text-neutral-500">Deconstructing complex data into coherent insights.</p>
+</li>
+<li class="border-b border-[#F2F2E6] pb-4">
+<h3 class="font-h2 text-h2 text-neutral-900 mb-1">Problem Solving</h3>
+<p class="font-body-md text-body-md text-neutral-500">Elegant solutions for structural inefficiencies.</p>
+</li>
+<li class="pb-4">
+<h3 class="font-h2 text-h2 text-neutral-900 mb-1">Deep Work</h3>
+<p class="font-body-md text-body-md text-neutral-500">Uninterrupted focus for maximum output quality.</p>
+</li>
+</ul>
+<div class="mt-8 pt-8 border-t border-[#E5E5CA]">
+<button class="w-full bg-neutral-900 text-white py-4 font-label-sm uppercase tracking-widest hover:bg-neutral-800 transition-colors">
+                                View Technical Stack
+                            </button>
+</div>
+</div>
+</div>
+<!-- Self Development - Wide Horizontal Bento Item -->
+<div class="md:col-span-12 bg-[#FDFDF8] border border-[#E5E5CA] rounded-lg overflow-hidden shadow-[0_40px_50px_rgba(229,229,202,0.15)] group">
+<div class="grid md:grid-cols-2">
+<div class="p-12 flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-neutral-900" data-icon="fitness_center">fitness_center</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container tracking-[0.2em] uppercase">Foundation</span>
+</div>
+<h2 class="font-display text-h1 text-neutral-900 mb-6">Self Development</h2>
+<p class="font-body-lg text-body-lg text-neutral-600 mb-8 leading-relaxed">
+                                Building the vessel for achievement. A rigorous daily regimen of physical training and mental conditioning designed to sharpen the edge of discipline and resilience.
+                            </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="block font-h2 text-h2 text-neutral-900 mb-1">Physical Mastery</span>
+<p class="font-body-md text-body-md text-neutral-500">High-intensity endurance and strength conditioning.</p>
+</div>
+<div>
+<span class="block font-h2 text-h2 text-neutral-900 mb-1">Mental Fortitude</span>
+<p class="font-body-md text-body-md text-neutral-500">Stoic practices and daily cognitive reflection.</p>
+</div>
+</div>
+</div>
+<div class="relative h-96 md:h-full min-h-[400px]">
+<img alt="Discipline" class="absolute inset-0 w-full h-full object-cover grayscale sepia-[0.2] group-hover:scale-105 transition-transform duration-1000" data-alt="Moody atmospheric gym interior with minimalist equipment, harsh light and shadow play, focusing on the texture of iron and concrete" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw_hZYBKIeVIsDj_dKsC2NDhnvPvr1T-CZ-zDdzG4sLhUhg05lzXdBdMTgg34ThE7CJA96Tyv3UPyNY4fnnUzfJ0t3vl_D4pNCIV8-YmlUwFGvLzNXVX2DUrHwXEk_DN-UmsPQxSDPe4oJVzvh4MBxV-uGYopA1DvqpnoglmGrW7KdDVxzXW8IF-YZQ0et5EJ5l1KEktzF2zDPbrVuFFxQgrXp-QpJLbBuo2ejBJZvmthkNz2_H0v8eUXW4vEptCYWwZ0qFk3Pz-0H"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Curated Philosophy List -->
+<div class="mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#E5E5CA] pb-8">
+<div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container tracking-[0.2em] uppercase mb-4 block">The Methodology</span>
+<h2 class="font-display text-display text-neutral-900">Principles of Action</h2>
+</div>
+<div class="mt-8 md:mt-0 max-w-sm">
+<p class="font-body-md text-body-md text-neutral-500 italic">"Consistency over intensity. Refinement over addition."</p>
+</div>
+</div>
+<div class="space-y-0">
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-12 border-b border-[#F2F2E6] hover:bg-white transition-colors px-4 -mx-4 rounded">
+<div class="flex items-center gap-8 mb-4 md:mb-0">
+<span class="font-display text-h1 text-neutral-300 group-hover:text-neutral-900 transition-colors">01</span>
+<div>
+<h4 class="font-h2 text-h2 text-neutral-900 group-hover:translate-x-2 transition-transform duration-300">Radical Ownership</h4>
+<p class="font-body-md text-body-md text-neutral-500">Taking full responsibility for every outcome and pivot.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-neutral-300 group-hover:text-neutral-900 transition-colors" data-icon="north_east">north_east</span>
+</div>
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-12 border-b border-[#F2F2E6] hover:bg-white transition-colors px-4 -mx-4 rounded">
+<div class="flex items-center gap-8 mb-4 md:mb-0">
+<span class="font-display text-h1 text-neutral-300 group-hover:text-neutral-900 transition-colors">02</span>
+<div>
+<h4 class="font-h2 text-h2 text-neutral-900 group-hover:translate-x-2 transition-transform duration-300">Iterative Growth</h4>
+<p class="font-body-md text-body-md text-neutral-500">1% daily compounding across all pillars of life.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-neutral-300 group-hover:text-neutral-900 transition-colors" data-icon="north_east">north_east</span>
+</div>
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-12 border-b border-[#F2F2E6] hover:bg-white transition-colors px-4 -mx-4 rounded">
+<div class="flex items-center gap-8 mb-4 md:mb-0">
+<span class="font-display text-h1 text-neutral-300 group-hover:text-neutral-900 transition-colors">03</span>
+<div>
+<h4 class="font-h2 text-h2 text-neutral-900 group-hover:translate-x-2 transition-transform duration-300">Strategic Silence</h4>
+<p class="font-body-md text-body-md text-neutral-500">Focusing on high-leverage actions rather than public validation.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-neutral-300 group-hover:text-neutral-900 transition-colors" data-icon="north_east">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-16 border-t border-stone-200 bg-[#FDFDF8]">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-bold text-neutral-900">
+                Rheihan Wahyu Saputro.
+            </div>
+<div class="font-inter text-sm tracking-wide text-neutral-600">
+                © 2024 Rheihan Wahyu Saputro. Aspiring for Excellence.
+            </div>
+<div class="flex gap-8">
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200" href="#">LinkedIn</a>
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200" href="#">GitHub</a>
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200" href="#">Mail</a>
+</div>
+</div>
+</footer>
+</body></html>

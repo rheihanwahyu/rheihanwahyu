@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#777575",
+                    "surface": "#faf9f9",
+                    "surface-bright": "#faf9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#faf9f9",
+                    "inverse-on-surface": "#f2f0f0",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "inverse-surface": "#2f3031",
+                    "inverse-primary": "#c6c6c7",
+                    "surface-dim": "#dbdad9",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c7c8",
+                    "on-background": "#1b1c1c",
+                    "surface-container-high": "#e9e8e8",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e3e2e2",
+                    "surface-container": "#efeded",
+                    "secondary-container": "#e1e1c9",
+                    "primary": "#5d5f5f",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#747878",
+                    "surface-variant": "#e3e2e2",
+                    "on-primary-fixed": "#1a1c1c",
+                    "tertiary-fixed": "#e5e2e1",
+                    "secondary-fixed": "#e4e4cc",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "secondary": "#5e604d",
+                    "on-surface-variant": "#444748",
+                    "tertiary": "#5f5e5e",
+                    "surface-container-low": "#f4f3f3",
+                    "primary-container": "#ffffff",
+                    "secondary-fixed-dim": "#c8c8b0",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#ffffff",
+                    "surface-tint": "#5d5f5f",
+                    "on-primary-fixed-variant": "#454747",
+                    "on-primary-container": "#747676",
+                    "on-secondary-fixed": "#1b1d0e",
+                    "on-secondary-container": "#636451",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#e2e2e2",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#474836"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "container-max": "1140px",
+                    "unit": "8px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "h2": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display": ["Inter"],
+                    "h1": ["Inter"]
+            },
+            "fontSize": {
+                    "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "h1": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #faf9f9; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-100">
+<div class="max-w-7xl mx-auto px-8 h-20 flex justify-between items-center">
+<span class="text-xl font-bold tracking-tighter text-neutral-900">Rheihan Wahyu Saputro</span>
+<div class="hidden md:flex gap-12 font-inter tracking-tight font-medium">
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="index.html">HOME</a>
+<a class="text-neutral-900 border-b-2 border-neutral-900 pb-1" href="about.html">ABOUT</a>
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="portfolio.html">PORTFOLIO</a>
+<a class="text-neutral-500 hover:text-neutral-900 transition-all duration-300" href="contact.html">CONTACT</a>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-secondary-container rounded-xl overflow-hidden shadow-[0_10px_40px_rgba(229,229,202,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Sophisticated portrait of a focused young man in a minimalist studio setting with soft natural light and warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT4igLxRu6Hwwaix2Wtum2s8X0CfUcNi4YB8X-U9yt2-1VWv2Vh56KcKOMGiXnsgXEirjS4dZAgHHQGGp4eIfRFzfNMVOcBLZI3wqMabQhFiwg3q7CPdgXaVnwLUCr-AmyWvkH7XH2o0K6fZ8We1n8AnK42WFNuX223we_hw7A8n7Sfb6nXr4AjmOBnmGa3Q3KU1xZ1m6CtnoXAyFm68BT4LzGafN8ITmAvcZSQJWc7IVRntL5YUc7FnvT6Qky9zvBka8C6kagpj8d"/>
+</div>
+<div class="absolute -bottom-8 -right-8 p-10 bg-white rounded-xl shadow-2xl border border-stone-100 hidden md:block">
+<p class="font-h2 text-neutral-900 mb-2">First-Gen Wealth</p>
+<p class="font-label-sm text-neutral-500 uppercase tracking-widest">The Mission Statement</p>
+</div>
+</div>
+<div>
+<h1 class="font-display text-neutral-900 mb-8 leading-tight">Membangun Masa Depan Dengan <span class="italic text-primary">Disiplin &amp; Visi.</span></h1>
+<div class="space-y-6 text-neutral-600 font-body-lg">
+<p>Nama saya Rheihan. Saya sedang membangun diri untuk menjadi miliarder pertama di keluarga saya melalui kombinasi disiplin, pengembangan skill, dan pemahaman finansial.</p>
+<p>Saat ini saya fokus pada peningkatan fisik, mental, serta belajar berbagai hal yang bisa menghasilkan nilai ekonomi seperti bisnis dan investasi.</p>
+<p>Saya percaya bahwa masa depan ditentukan oleh kebiasaan hari ini. Karena itu, saya melatih diri untuk konsisten, tahan tekanan, dan terus berkembang.</p>
+</div>
+<div class="mt-12 flex gap-4">
+<button class="bg-neutral-900 text-white px-8 py-4 rounded font-medium hover:opacity-90 transition-opacity">Connect with Me</button>
+<button class="border border-stone-200 px-8 py-4 rounded font-medium hover:bg-stone-50 transition-colors">Download CV</button>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-section-gap">
+<div class="text-center mb-16">
+<span class="font-label-sm text-neutral-400 uppercase tracking-[0.2em]">Pillars of Growth</span>
+<h2 class="font-h1 text-neutral-900 mt-4">Core Focus Areas</h2>
+</div>
+<div class="bento-grid">
+<div class="col-span-12 md:col-span-8 bg-white p-12 rounded-xl border border-stone-100 shadow-[0_20px_50px_rgba(229,229,202,0.2)] flex flex-col justify-between group hover:translate-y-[-4px] transition-all duration-300">
+<div>
+<span class="material-symbols-outlined text-4xl text-neutral-900 mb-6" data-icon="account_balance">account_balance</span>
+<h3 class="font-h2 text-neutral-900 mb-4">Financial Intelligence</h3>
+<p class="text-neutral-600 font-body-md max-w-md">Strategizing investment portfolios and building business models that provide high economic value and long-term sustainability.</p>
+</div>
+<div class="mt-8 flex gap-2">
+<span class="px-3 py-1 bg-stone-50 text-stone-500 rounded-full font-label-sm">INVESTMENT</span>
+<span class="px-3 py-1 bg-stone-50 text-stone-500 rounded-full font-label-sm">BUSINESS</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 bg-secondary-container p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-neutral-900" data-icon="fitness_center">fitness_center</span>
+<div>
+<h3 class="font-h2 text-neutral-900 mb-2">Physical Peak</h3>
+<p class="text-neutral-800 font-body-md">Discipline in the gym translates to discipline in life.</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 bg-white border border-stone-100 p-12 rounded-xl flex flex-col justify-between group hover:translate-y-[-4px] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-neutral-900" data-icon="psychology">psychology</span>
+<div>
+<h3 class="font-h2 text-neutral-900 mb-2">Mental Resilience</h3>
+<p class="text-neutral-600 font-body-md">Training the mind to withstand pressure and remain consistent.</p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 relative overflow-hidden rounded-xl h-[300px] group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern corporate architecture with clean lines and reflective glass under a clear sky representing ambition and structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwmwJjitAJym9S4Jr0A_Z5BcsKEhGC3cOZXeGohg6hz2W-mRx2bRCqGYv2ytHwzoZS3_IttpBEXi6ht4Q3Bikt4Tm6Q9FDUqDw6APT2BDJuqFV473rXRP3MZWBiAdIkAtCdyl_7tOpMRLhB7KMPRf-6Ft9FSTspOrQId05nIXeJ9NSEKiQNzCopPTYRP9a62hT3dyZTL9wq888-bKP37tK7WJTKJdN7Mvqy4WGbnUS-zNgPbBcJbWdHczZ5VC3_KCvYuybbELX-kwn"/>
+<div class="absolute inset-0 bg-neutral-900/40 flex items-end p-12">
+<p class="text-white font-h2">"Future is defined by today's habits."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-8 mb-section-gap text-center">
+<div class="p-16 bg-white rounded-2xl shadow-sm border border-stone-100">
+<span class="material-symbols-outlined text-stone-200 text-6xl mb-8" data-icon="format_quote">format_quote</span>
+<p class="font-display text-neutral-900 mb-8 italic">"Masa depan ditentukan oleh kebiasaan hari ini."</p>
+<div class="w-12 h-1 bg-neutral-900 mx-auto"></div>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 border-t border-stone-200 bg-[#FDFDF8]">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-bold text-neutral-900">Rheihan Wahyu Saputro</span>
+<p class="text-neutral-600 font-inter text-sm tracking-wide">© 2024 Rheihan Wahyu Saputro. Aspiring for Excellence.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200 font-inter text-sm tracking-wide" href="#">LinkedIn</a>
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200 font-inter text-sm tracking-wide" href="#">GitHub</a>
+<a class="text-neutral-500 hover:text-neutral-900 underline-offset-4 hover:underline transition-colors duration-200 font-inter text-sm tracking-wide" href="#">Mail</a>
+</div>
+</div>
+</footer>
+</body></html>
